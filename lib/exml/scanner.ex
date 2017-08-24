@@ -10,10 +10,16 @@ defmodule Exml.Scanner do
       {:text, "foo bar foo"}
   """
   def scan(buffer) 
+  def scan("</" <> rem) do
+    rem = _eat_ws(rem)
+    {name, rem} = _scan_identifier(rem)
+    rem = _eat_ws(rem)
+    rem = _expect(rem, ?>)
+    {{:element_close, name}, rem}
+  end
   def scan("<" <> rem) do
     rem = _eat_ws(rem)
     {name, rem} = _scan_identifier(rem)
-    {{:element_start, name, %{}}, rem}
     rem = _eat_ws(rem)
     {attr_list, rem} = _scan_attributes(rem, [])
     _scan_element_ending(rem, name, attr_list) 
@@ -32,10 +38,10 @@ defmodule Exml.Scanner do
 
 
   def _scan_element_ending(">" <> rem, name, attr_list) do
-    {{:element_start, name, attr_list}, rem}
+    {{:element_open, name, attr_list}, rem}
   end
   def _scan_element_ending("/>" <> rem, name, attr_list) do
-    {{:element_start_end, name, attr_list}, rem}
+    {{:element_start_open, name, attr_list}, rem}
   end
 
   def _scan_attributes(">" <> _ = rem, attr_list) do
