@@ -14,6 +14,10 @@ defmodule Exml.ScannerTest do
     assert {{:element_open, "bla", [{"foo", "bar"}]}, ""}  == scan(~S{<bla foo="bar">})
   end
 
+  test "self-close with attributes" do
+    assert {{:element_open_close, "bla", [{"foo", "bar"}]}, ""}  == scan(~S{<bla foo="bar"/>})
+  end
+
   test "scan text" do
     assert {{:text, "foobar"}, "</bla>"} = scan(~S{foobar</bla>})
   end

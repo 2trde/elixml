@@ -41,7 +41,7 @@ defmodule Exml.Scanner do
     {{:element_open, name, attr_list}, rem}
   end
   def _scan_element_ending("/>" <> rem, name, attr_list) do
-    {{:element_start_open, name, attr_list}, rem}
+    {{:element_open_close, name, attr_list}, rem}
   end
 
   def _scan_attributes(">" <> _ = rem, attr_list) do
