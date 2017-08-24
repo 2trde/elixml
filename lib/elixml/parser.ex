@@ -11,6 +11,8 @@ defmodule Elixml.Parser do
     |> case do
       {{:text, _}, rem} ->
         parse_root(rem)
+      {{:header, _}, rem} ->
+        parse_root(rem)
       {{:element_open, _, _} = elem, rem} ->
         parse_element(elem, rem)
     end

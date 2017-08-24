@@ -20,6 +20,14 @@ defmodule Elixml.Scanner do
     rem = _expect(rem, ?>)
     {{:element_close, name}, rem}
   end
+  def scan("<?xml" <> rem) do
+    rem = _eat_ws(rem)
+    {attr_list, rem} = _scan_attributes(rem, [])
+    rem = _eat_ws(rem)
+    rem = _expect(rem, ??)
+    rem = _expect(rem, ?>)
+    {{:header, attr_list}, rem}
+  end
   def scan("<" <> rem) do
     rem = _eat_ws(rem)
     {name, rem} = _scan_identifier(rem)
@@ -56,6 +64,9 @@ defmodule Elixml.Scanner do
     {attr_list, rem}
   end
   def _scan_attributes("/>" <> _ = rem, attr_list) do
+    {attr_list, rem}
+  end
+  def _scan_attributes("?>" <> _ = rem, attr_list) do
     {attr_list, rem}
   end
   def _scan_attributes(rem, attr_list) do

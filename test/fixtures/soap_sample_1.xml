@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
    <S:Body>
       <ns5:getVehicleIdentificationByKbaResponse xmlns:ns5="http://sphinx.dat.de/services/VehicleIdentificationService">
