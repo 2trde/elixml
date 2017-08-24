@@ -1,0 +1,481 @@
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns5:getVehicleIdentificationByKbaResponse xmlns:ns5="http://sphinx.dat.de/services/VehicleIdentificationService">
+         <VXS xmlns:ns1="http://www.dat.de/vxs">
+            <ns1:Dossier>
+               <ns1:Country>DE</ns1:Country>
+               <ns1:Language>de_DE</ns1:Language>
+               <ns1:Vehicle>
+                  <ns1:DatECode>123731928</ns1:DatECode>
+                  <ns1:Container>DE004</ns1:Container>
+                  <ns1:VehicleTypeName>Pkw, SUV, Kleintransporter</ns1:VehicleTypeName>
+                  <ns1:ManufacturerName origin="dat">Suzuki</ns1:ManufacturerName>
+                  <ns1:BaseModelName origin="dat">SX4  (RW/EY)(2006->)</ns1:BaseModelName>
+                  <ns1:SubModelName origin="dat">Club</ns1:SubModelName>
+                  <ns1:ContainerName>DE - SUV5 1.6 VVT EU5, 4x4 Club (EURO 5), 2009 - 2013</ns1:ContainerName>
+                  <ns1:MainTypeGroupName>SX4</ns1:MainTypeGroupName>
+                  <ns1:VehicleType>1</ns1:VehicleType>
+                  <ns1:Manufacturer>830</ns1:Manufacturer>
+                  <ns1:BaseModel>61</ns1:BaseModel>
+                  <ns1:SubModel>6</ns1:SubModel>
+                  <ns1:MainTypeGroup>SX4</ns1:MainTypeGroup>
+                  <ns1:IdentificationSource>IDENTIFICATIONSOURCE_KBA</ns1:IdentificationSource>
+                  <ns1:ReleaseIndicator>ALL</ns1:ReleaseIndicator>
+                  <kbaNumbers>8306/ABG,8306/ABM</kbaNumbers>
+                  <ns1:KbaNumbersN>
+                     <ns1:KbaNumber>8306/ABG</ns1:KbaNumber>
+                     <ns1:KbaNumber>8306/ABM</ns1:KbaNumber>
+                  </ns1:KbaNumbersN>
+                  <ns1:DATECodeEquipment>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>83705</ns1:DatEquipmentId>
+                        <ns1:Description>Motor 1,6 Ltr. - 88 kW 16V KAT</ns1:Description>
+                        <ns1:EquipmentClass>1</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>10005</ns1:DatEquipmentId>
+                        <ns1:Description>Karosserie: 5-türig</ns1:Description>
+                        <ns1:EquipmentClass>2</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>70990</ns1:DatEquipmentId>
+                        <ns1:Description>Radstand 2500 mm</ns1:Description>
+                        <ns1:EquipmentClass>3</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>70400</ns1:DatEquipmentId>
+                        <ns1:Description>Antriebsart: Allradantrieb zuschaltbar</ns1:Description>
+                        <ns1:EquipmentClass>4</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>75005</ns1:DatEquipmentId>
+                        <ns1:Description>Getriebe 5-Gang</ns1:Description>
+                        <ns1:EquipmentClass>11</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                  </ns1:DATECodeEquipment>
+               </ns1:Vehicle>
+            </ns1:Dossier>
+            <ns1:Dossier>
+               <ns1:Country>DE</ns1:Country>
+               <ns1:Language>de_DE</ns1:Language>
+               <ns1:Vehicle>
+                  <ns1:DatECode>018300610060024</ns1:DatECode>
+                  <ns1:Container>DE004</ns1:Container>
+                  <ns1:VehicleTypeName>Pkw, SUV, Kleintransporter</ns1:VehicleTypeName>
+                  <ns1:ManufacturerName origin="dat">Suzuki</ns1:ManufacturerName>
+                  <ns1:BaseModelName origin="dat">SX4  (RW/EY)(2006->)</ns1:BaseModelName>
+                  <ns1:SubModelName origin="dat">Club</ns1:SubModelName>
+                  <ns1:ContainerName>DE - SUV5 1.6 VVT EU5, 4x4 Club (EURO 5), 2009 - 2013</ns1:ContainerName>
+                  <ns1:MainTypeGroupName>SX4</ns1:MainTypeGroupName>
+                  <ns1:VehicleType>1</ns1:VehicleType>
+                  <ns1:Manufacturer>830</ns1:Manufacturer>
+                  <ns1:BaseModel>61</ns1:BaseModel>
+                  <ns1:SubModel>6</ns1:SubModel>
+                  <ns1:MainTypeGroup>SX4</ns1:MainTypeGroup>
+                  <ns1:IdentificationSource>IDENTIFICATIONSOURCE_KBA</ns1:IdentificationSource>
+                  <ns1:ReleaseIndicator>ALL</ns1:ReleaseIndicator>
+                  <kbaNumbers>8306/ABG,8306/ABM</kbaNumbers>
+                  <ns1:KbaNumbersN>
+                     <ns1:KbaNumber>8306/ABG</ns1:KbaNumber>
+                     <ns1:KbaNumber>8306/ABM</ns1:KbaNumber>
+                  </ns1:KbaNumbersN>
+                  <ns1:DATECodeEquipment>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>83705</ns1:DatEquipmentId>
+                        <ns1:Description>Motor 1,6 Ltr. - 88 kW 16V KAT</ns1:Description>
+                        <ns1:EquipmentClass>1</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>10005</ns1:DatEquipmentId>
+                        <ns1:Description>Karosserie: 5-türig</ns1:Description>
+                        <ns1:EquipmentClass>2</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>70990</ns1:DatEquipmentId>
+                        <ns1:Description>Radstand 2500 mm</ns1:Description>
+                        <ns1:EquipmentClass>3</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>70400</ns1:DatEquipmentId>
+                        <ns1:Description>Antriebsart: Allradantrieb zuschaltbar</ns1:Description>
+                        <ns1:EquipmentClass>4</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>75503</ns1:DatEquipmentId>
+                        <ns1:Description>Getriebe Automatik - (4-Stufen)</ns1:Description>
+                        <ns1:EquipmentClass>11</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                  </ns1:DATECodeEquipment>
+               </ns1:Vehicle>
+            </ns1:Dossier>
+            <ns1:Dossier>
+               <ns1:Country>DE</ns1:Country>
+               <ns1:Language>de_DE</ns1:Language>
+               <ns1:Vehicle>
+                  <ns1:DatECode>018300610080014</ns1:DatECode>
+                  <ns1:Container>DE007</ns1:Container>
+                  <ns1:VehicleTypeName>Pkw, SUV, Kleintransporter</ns1:VehicleTypeName>
+                  <ns1:ManufacturerName origin="dat">Suzuki</ns1:ManufacturerName>
+                  <ns1:BaseModelName origin="dat">SX4  (RW/EY)(2006->)</ns1:BaseModelName>
+                  <ns1:SubModelName origin="dat">Comfort</ns1:SubModelName>
+                  <ns1:ContainerName>DE - SUV5 1.6 VVT EU5, 4x4 Comfort (EURO 5), 2009 - 2013</ns1:ContainerName>
+                  <ns1:MainTypeGroupName>SX4</ns1:MainTypeGroupName>
+                  <ns1:VehicleType>1</ns1:VehicleType>
+                  <ns1:Manufacturer>830</ns1:Manufacturer>
+                  <ns1:BaseModel>61</ns1:BaseModel>
+                  <ns1:SubModel>8</ns1:SubModel>
+                  <ns1:MainTypeGroup>SX4</ns1:MainTypeGroup>
+                  <ns1:IdentificationSource>IDENTIFICATIONSOURCE_KBA</ns1:IdentificationSource>
+                  <ns1:ReleaseIndicator>ALL</ns1:ReleaseIndicator>
+                  <kbaNumbers>8306/ABG,8306/ABM</kbaNumbers>
+                  <ns1:KbaNumbersN>
+                     <ns1:KbaNumber>8306/ABG</ns1:KbaNumber>
+                     <ns1:KbaNumber>8306/ABM</ns1:KbaNumber>
+                  </ns1:KbaNumbersN>
+                  <ns1:DATECodeEquipment>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>83705</ns1:DatEquipmentId>
+                        <ns1:Description>Motor 1,6 Ltr. - 88 kW 16V KAT</ns1:Description>
+                        <ns1:EquipmentClass>1</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>10005</ns1:DatEquipmentId>
+                        <ns1:Description>Karosserie: 5-türig</ns1:Description>
+                        <ns1:EquipmentClass>2</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>70990</ns1:DatEquipmentId>
+                        <ns1:Description>Radstand 2500 mm</ns1:Description>
+                        <ns1:EquipmentClass>3</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>70400</ns1:DatEquipmentId>
+                        <ns1:Description>Antriebsart: Allradantrieb zuschaltbar</ns1:Description>
+                        <ns1:EquipmentClass>4</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>75005</ns1:DatEquipmentId>
+                        <ns1:Description>Getriebe 5-Gang</ns1:Description>
+                        <ns1:EquipmentClass>11</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                  </ns1:DATECodeEquipment>
+               </ns1:Vehicle>
+            </ns1:Dossier>
+            <ns1:Dossier>
+               <ns1:Country>DE</ns1:Country>
+               <ns1:Language>de_DE</ns1:Language>
+               <ns1:Vehicle>
+                  <ns1:DatECode>018300610140001</ns1:DatECode>
+                  <ns1:Container>DE001</ns1:Container>
+                  <ns1:VehicleTypeName>Pkw, SUV, Kleintransporter</ns1:VehicleTypeName>
+                  <ns1:ManufacturerName origin="dat">Suzuki</ns1:ManufacturerName>
+                  <ns1:BaseModelName origin="dat">SX4  (RW/EY)(2006->)</ns1:BaseModelName>
+                  <ns1:SubModelName origin="dat">Style 4x4</ns1:SubModelName>
+                  <ns1:ContainerName>DE - SUV5 1.6 VVT EU5, 4x4 Style, 2011 - 2013</ns1:ContainerName>
+                  <ns1:MainTypeGroupName>SX4</ns1:MainTypeGroupName>
+                  <ns1:VehicleType>1</ns1:VehicleType>
+                  <ns1:Manufacturer>830</ns1:Manufacturer>
+                  <ns1:BaseModel>61</ns1:BaseModel>
+                  <ns1:SubModel>14</ns1:SubModel>
+                  <ns1:MainTypeGroup>SX4</ns1:MainTypeGroup>
+                  <ns1:IdentificationSource>IDENTIFICATIONSOURCE_KBA</ns1:IdentificationSource>
+                  <ns1:ReleaseIndicator>ALL</ns1:ReleaseIndicator>
+                  <kbaNumbers>8306/ABG,8306/ABM</kbaNumbers>
+                  <ns1:KbaNumbersN>
+                     <ns1:KbaNumber>8306/ABG</ns1:KbaNumber>
+                     <ns1:KbaNumber>8306/ABM</ns1:KbaNumber>
+                  </ns1:KbaNumbersN>
+                  <ns1:DATECodeEquipment>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>83705</ns1:DatEquipmentId>
+                        <ns1:Description>Motor 1,6 Ltr. - 88 kW 16V KAT</ns1:Description>
+                        <ns1:EquipmentClass>1</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>10005</ns1:DatEquipmentId>
+                        <ns1:Description>Karosserie: 5-türig</ns1:Description>
+                        <ns1:EquipmentClass>2</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>70990</ns1:DatEquipmentId>
+                        <ns1:Description>Radstand 2500 mm</ns1:Description>
+                        <ns1:EquipmentClass>3</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>70400</ns1:DatEquipmentId>
+                        <ns1:Description>Antriebsart: Allradantrieb zuschaltbar</ns1:Description>
+                        <ns1:EquipmentClass>4</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>75005</ns1:DatEquipmentId>
+                        <ns1:Description>Getriebe 5-Gang</ns1:Description>
+                        <ns1:EquipmentClass>11</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                  </ns1:DATECodeEquipment>
+               </ns1:Vehicle>
+            </ns1:Dossier>
+            <ns1:Dossier>
+               <ns1:Country>DE</ns1:Country>
+               <ns1:Language>de_DE</ns1:Language>
+               <ns1:Vehicle>
+                  <ns1:DatECode>018300610150001</ns1:DatECode>
+                  <ns1:Container>DE001</ns1:Container>
+                  <ns1:VehicleTypeName>Pkw, SUV, Kleintransporter</ns1:VehicleTypeName>
+                  <ns1:ManufacturerName origin="dat">Suzuki</ns1:ManufacturerName>
+                  <ns1:BaseModelName origin="dat">SX4  (RW/EY)(2006->)</ns1:BaseModelName>
+                  <ns1:SubModelName origin="dat">Limited 4x4</ns1:SubModelName>
+                  <ns1:ContainerName>DE - SUV5 1.6 VVT EU5, Limited, 2010 - 2012</ns1:ContainerName>
+                  <ns1:MainTypeGroupName>SX4</ns1:MainTypeGroupName>
+                  <ns1:VehicleType>1</ns1:VehicleType>
+                  <ns1:Manufacturer>830</ns1:Manufacturer>
+                  <ns1:BaseModel>61</ns1:BaseModel>
+                  <ns1:SubModel>15</ns1:SubModel>
+                  <ns1:MainTypeGroup>SX4</ns1:MainTypeGroup>
+                  <ns1:IdentificationSource>IDENTIFICATIONSOURCE_KBA</ns1:IdentificationSource>
+                  <ns1:ReleaseIndicator>ALL</ns1:ReleaseIndicator>
+                  <kbaNumbers>8306/ABG,8306/ABM</kbaNumbers>
+                  <ns1:KbaNumbersN>
+                     <ns1:KbaNumber>8306/ABG</ns1:KbaNumber>
+                     <ns1:KbaNumber>8306/ABM</ns1:KbaNumber>
+                  </ns1:KbaNumbersN>
+                  <ns1:DATECodeEquipment>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>83705</ns1:DatEquipmentId>
+                        <ns1:Description>Motor 1,6 Ltr. - 88 kW 16V KAT</ns1:Description>
+                        <ns1:EquipmentClass>1</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>10005</ns1:DatEquipmentId>
+                        <ns1:Description>Karosserie: 5-türig</ns1:Description>
+                        <ns1:EquipmentClass>2</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>70990</ns1:DatEquipmentId>
+                        <ns1:Description>Radstand 2500 mm</ns1:Description>
+                        <ns1:EquipmentClass>3</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>70400</ns1:DatEquipmentId>
+                        <ns1:Description>Antriebsart: Allradantrieb zuschaltbar</ns1:Description>
+                        <ns1:EquipmentClass>4</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>75005</ns1:DatEquipmentId>
+                        <ns1:Description>Getriebe 5-Gang</ns1:Description>
+                        <ns1:EquipmentClass>11</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                  </ns1:DATECodeEquipment>
+               </ns1:Vehicle>
+            </ns1:Dossier>
+            <ns1:Dossier>
+               <ns1:Country>DE</ns1:Country>
+               <ns1:Language>de_DE</ns1:Language>
+               <ns1:Vehicle>
+                  <ns1:DatECode>018300610770001</ns1:DatECode>
+                  <ns1:Container>DE001</ns1:Container>
+                  <ns1:VehicleTypeName>Pkw, SUV, Kleintransporter</ns1:VehicleTypeName>
+                  <ns1:ManufacturerName origin="dat">Suzuki</ns1:ManufacturerName>
+                  <ns1:BaseModelName origin="dat">SX4  (RW/EY)(2006->)</ns1:BaseModelName>
+                  <ns1:SubModelName origin="dat">Classic Club 4x4</ns1:SubModelName>
+                  <ns1:ContainerName>DE - SUV5 1.6 VVT EU5, 4x4 Classic Club, 2013 - 2015</ns1:ContainerName>
+                  <ns1:MainTypeGroupName>SX4</ns1:MainTypeGroupName>
+                  <ns1:VehicleType>1</ns1:VehicleType>
+                  <ns1:Manufacturer>830</ns1:Manufacturer>
+                  <ns1:BaseModel>61</ns1:BaseModel>
+                  <ns1:SubModel>77</ns1:SubModel>
+                  <ns1:MainTypeGroup>SX4</ns1:MainTypeGroup>
+                  <ns1:IdentificationSource>IDENTIFICATIONSOURCE_KBA</ns1:IdentificationSource>
+                  <ns1:ReleaseIndicator>ALL</ns1:ReleaseIndicator>
+                  <kbaNumbers>8306/ABG</kbaNumbers>
+                  <ns1:KbaNumbersN>
+                     <ns1:KbaNumber>8306/ABG</ns1:KbaNumber>
+                  </ns1:KbaNumbersN>
+                  <ns1:DATECodeEquipment>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>83705</ns1:DatEquipmentId>
+                        <ns1:Description>Motor 1,6 Ltr. - 88 kW 16V KAT</ns1:Description>
+                        <ns1:EquipmentClass>1</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>10005</ns1:DatEquipmentId>
+                        <ns1:Description>Karosserie: 5-türig</ns1:Description>
+                        <ns1:EquipmentClass>2</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>70990</ns1:DatEquipmentId>
+                        <ns1:Description>Radstand 2500 mm</ns1:Description>
+                        <ns1:EquipmentClass>3</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>70420</ns1:DatEquipmentId>
+                        <ns1:Description>Antriebsart: Allradantrieb</ns1:Description>
+                        <ns1:EquipmentClass>4</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>75005</ns1:DatEquipmentId>
+                        <ns1:Description>Getriebe 5-Gang</ns1:Description>
+                        <ns1:EquipmentClass>11</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                  </ns1:DATECodeEquipment>
+               </ns1:Vehicle>
+            </ns1:Dossier>
+            <ns1:Dossier>
+               <ns1:Country>DE</ns1:Country>
+               <ns1:Language>de_DE</ns1:Language>
+               <ns1:Vehicle>
+                  <ns1:DatECode>018300610790001</ns1:DatECode>
+                  <ns1:Container>DE001</ns1:Container>
+                  <ns1:VehicleTypeName>Pkw, SUV, Kleintransporter</ns1:VehicleTypeName>
+                  <ns1:ManufacturerName origin="dat">Suzuki</ns1:ManufacturerName>
+                  <ns1:BaseModelName origin="dat">SX4  (RW/EY)(2006->)</ns1:BaseModelName>
+                  <ns1:SubModelName origin="dat">Classic Comfort 4x4</ns1:SubModelName>
+                  <ns1:ContainerName>DE - SUV5 1.6 VVT EU5, 4x4 Classic Comfort, 2013 - 2014</ns1:ContainerName>
+                  <ns1:MainTypeGroupName>SX4</ns1:MainTypeGroupName>
+                  <ns1:VehicleType>1</ns1:VehicleType>
+                  <ns1:Manufacturer>830</ns1:Manufacturer>
+                  <ns1:BaseModel>61</ns1:BaseModel>
+                  <ns1:SubModel>79</ns1:SubModel>
+                  <ns1:MainTypeGroup>SX4</ns1:MainTypeGroup>
+                  <ns1:IdentificationSource>IDENTIFICATIONSOURCE_KBA</ns1:IdentificationSource>
+                  <ns1:ReleaseIndicator>ALL</ns1:ReleaseIndicator>
+                  <kbaNumbers>8306/ABG</kbaNumbers>
+                  <ns1:KbaNumbersN>
+                     <ns1:KbaNumber>8306/ABG</ns1:KbaNumber>
+                  </ns1:KbaNumbersN>
+                  <ns1:DATECodeEquipment>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>83705</ns1:DatEquipmentId>
+                        <ns1:Description>Motor 1,6 Ltr. - 88 kW 16V KAT</ns1:Description>
+                        <ns1:EquipmentClass>1</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>10005</ns1:DatEquipmentId>
+                        <ns1:Description>Karosserie: 5-türig</ns1:Description>
+                        <ns1:EquipmentClass>2</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>70990</ns1:DatEquipmentId>
+                        <ns1:Description>Radstand 2500 mm</ns1:Description>
+                        <ns1:EquipmentClass>3</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>70420</ns1:DatEquipmentId>
+                        <ns1:Description>Antriebsart: Allradantrieb</ns1:Description>
+                        <ns1:EquipmentClass>4</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>75005</ns1:DatEquipmentId>
+                        <ns1:Description>Getriebe 5-Gang</ns1:Description>
+                        <ns1:EquipmentClass>11</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                  </ns1:DATECodeEquipment>
+               </ns1:Vehicle>
+            </ns1:Dossier>
+            <ns1:Dossier>
+               <ns1:Country>DE</ns1:Country>
+               <ns1:Language>de_DE</ns1:Language>
+               <ns1:Vehicle>
+                  <ns1:DatECode>018300610810002</ns1:DatECode>
+                  <ns1:Container>DE001</ns1:Container>
+                  <ns1:VehicleTypeName>Pkw, SUV, Kleintransporter</ns1:VehicleTypeName>
+                  <ns1:ManufacturerName origin="dat">Suzuki</ns1:ManufacturerName>
+                  <ns1:BaseModelName origin="dat">SX4  (RW/EY)(2006->)</ns1:BaseModelName>
+                  <ns1:SubModelName origin="dat">Classic Style 4X4</ns1:SubModelName>
+                  <ns1:ContainerName>DE - SUV5 1.6 VVT EU5, 4x4 Classic Style DPF, 2013 - 2015</ns1:ContainerName>
+                  <ns1:MainTypeGroupName>SX4</ns1:MainTypeGroupName>
+                  <ns1:VehicleType>1</ns1:VehicleType>
+                  <ns1:Manufacturer>830</ns1:Manufacturer>
+                  <ns1:BaseModel>61</ns1:BaseModel>
+                  <ns1:SubModel>81</ns1:SubModel>
+                  <ns1:MainTypeGroup>SX4</ns1:MainTypeGroup>
+                  <ns1:IdentificationSource>IDENTIFICATIONSOURCE_KBA</ns1:IdentificationSource>
+                  <ns1:ReleaseIndicator>ALL</ns1:ReleaseIndicator>
+                  <kbaNumbers>8306/ABG</kbaNumbers>
+                  <ns1:KbaNumbersN>
+                     <ns1:KbaNumber>8306/ABG</ns1:KbaNumber>
+                  </ns1:KbaNumbersN>
+                  <ns1:DATECodeEquipment>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>83705</ns1:DatEquipmentId>
+                        <ns1:Description>Motor 1,6 Ltr. - 88 kW 16V KAT</ns1:Description>
+                        <ns1:EquipmentClass>1</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>10005</ns1:DatEquipmentId>
+                        <ns1:Description>Karosserie: 5-türig</ns1:Description>
+                        <ns1:EquipmentClass>2</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>70990</ns1:DatEquipmentId>
+                        <ns1:Description>Radstand 2500 mm</ns1:Description>
+                        <ns1:EquipmentClass>3</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>70420</ns1:DatEquipmentId>
+                        <ns1:Description>Antriebsart: Allradantrieb</ns1:Description>
+                        <ns1:EquipmentClass>4</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>75005</ns1:DatEquipmentId>
+                        <ns1:Description>Getriebe 5-Gang</ns1:Description>
+                        <ns1:EquipmentClass>11</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                  </ns1:DATECodeEquipment>
+               </ns1:Vehicle>
+            </ns1:Dossier>
+            <ns1:Dossier>
+               <ns1:Country>DE</ns1:Country>
+               <ns1:Language>de_DE</ns1:Language>
+               <ns1:Vehicle>
+                  <ns1:DatECode>018300610810002</ns1:DatECode>
+                  <ns1:Container>DE003</ns1:Container>
+                  <ns1:VehicleTypeName>Pkw, SUV, Kleintransporter</ns1:VehicleTypeName>
+                  <ns1:ManufacturerName origin="dat">Suzuki</ns1:ManufacturerName>
+                  <ns1:BaseModelName origin="dat">SX4  (RW/EY)(2006->)</ns1:BaseModelName>
+                  <ns1:SubModelName origin="dat">Classic Style 4X4</ns1:SubModelName>
+                  <ns1:ContainerName>DE - SUV5 1.6 VVT EU5, 4x4 Classic Style, 2014 - 2015</ns1:ContainerName>
+                  <ns1:MainTypeGroupName>SX4</ns1:MainTypeGroupName>
+                  <ns1:VehicleType>1</ns1:VehicleType>
+                  <ns1:Manufacturer>830</ns1:Manufacturer>
+                  <ns1:BaseModel>61</ns1:BaseModel>
+                  <ns1:SubModel>81</ns1:SubModel>
+                  <ns1:MainTypeGroup>SX4</ns1:MainTypeGroup>
+                  <ns1:IdentificationSource>IDENTIFICATIONSOURCE_KBA</ns1:IdentificationSource>
+                  <ns1:ReleaseIndicator>ALL</ns1:ReleaseIndicator>
+                  <kbaNumbers>8306/ABG</kbaNumbers>
+                  <ns1:KbaNumbersN>
+                     <ns1:KbaNumber>8306/ABG</ns1:KbaNumber>
+                  </ns1:KbaNumbersN>
+                  <ns1:DATECodeEquipment>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>83705</ns1:DatEquipmentId>
+                        <ns1:Description>Motor 1,6 Ltr. - 88 kW 16V KAT</ns1:Description>
+                        <ns1:EquipmentClass>1</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>10005</ns1:DatEquipmentId>
+                        <ns1:Description>Karosserie: 5-tuerig</ns1:Description>
+                        <ns1:EquipmentClass>2</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>70990</ns1:DatEquipmentId>
+                        <ns1:Description>Radstand 2500 mm</ns1:Description>
+                        <ns1:EquipmentClass>3</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>70420</ns1:DatEquipmentId>
+                        <ns1:Description>Antriebsart: Allradantrieb</ns1:Description>
+                        <ns1:EquipmentClass>4</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                     <ns1:EquipmentPosition>
+                        <ns1:DatEquipmentId>75005</ns1:DatEquipmentId>
+                        <ns1:Description>Getriebe 5-Gang</ns1:Description>
+                        <ns1:EquipmentClass>11</ns1:EquipmentClass>
+                     </ns1:EquipmentPosition>
+                  </ns1:DATECodeEquipment>
+               </ns1:Vehicle>
+            </ns1:Dossier>
+         </VXS>
+      </ns5:getVehicleIdentificationByKbaResponse>
+   </S:Body>
+</S:Envelope>

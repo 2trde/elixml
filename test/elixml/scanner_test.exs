@@ -1,6 +1,6 @@
-defmodule Exml.ScannerTest do
+defmodule Elixml.ScannerTest do
   use ExUnit.Case
-  import Exml.Scanner
+  import Elixml.Scanner
 
   test "test super simple case" do
     assert {{:element_open, "bla", []}, ""}  == scan("<bla>")
