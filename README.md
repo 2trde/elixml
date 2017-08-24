@@ -21,7 +21,7 @@ by adding `elixml` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:elixml, "~> 0.1.0"}
+    {:elixml, github: "mlankenau/elixml"}
   ]
 end
 ```
