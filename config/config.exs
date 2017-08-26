@@ -10,11 +10,11 @@ use Mix.Config
 
 # You can configure your application as:
 #
-#     config :exml, key: :value
+#     config :elixml, key: :value
 #
 # and access this configuration in your application as:
 #
-#     Application.get_env(:exml, :key)
+#     Application.get_env(:elixml, :key)
 #
 # You can also configure a 3rd-party app:
 #

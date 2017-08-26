@@ -1,4 +1,4 @@
-defmodule Exml.Mixfile do
+defmodule Elixml.Mixfile do
   use Mix.Project
 
   def project do
