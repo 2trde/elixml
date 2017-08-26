@@ -15,13 +15,9 @@ defmodule Elixml.Mixfile do
         licenses: ["Apache 2.0"],
         links: %{"GitHub" => "https://github.com/mlankenau/elixml"}
       ],
-      source_url: "https://github.com/mlankenau/elixml"
+      source_url: "https://github.com/mlankenau/elixml",
       deps: deps()
     ]
-  end
-
-  defp description() do
-    
   end
 
   # Run "mix help compile.app" to learn about applications.
