@@ -35,8 +35,8 @@ mydoc =
   File.read!("my_xml_file")
   |> Elixml.parse
 
--> will return the root element like
-%{name: my_root_element, children: [], attributes: []}
+# will return the root element like
+# %{name: "my_root_element", children: [], attributes: []}
 ```
 
 ### Find elements
@@ -44,7 +44,7 @@ mydoc =
 ```
 Elixml.find(mydoc, "some_element")
 
--> will return the list of elements found
+# will return the list of elements found
 
 ```
 

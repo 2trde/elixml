@@ -2,7 +2,7 @@ defmodule Elixml.Parser do
   import Elixml.Scanner
 
   def parse(buffer) do
-    {root, rem} = parse_root(buffer)
+    {root, _rem} = parse_root(buffer)
     root
   end
 
@@ -38,7 +38,7 @@ defmodule Elixml.Parser do
       {{:element_open, _, _} = elem, rem} ->
         {elem, rem} = parse_element(elem, rem)
         parse_children(rem, current_element, [elem | list])
-      {{:element_close, current_element}, rem} ->
+      {{:element_close, _current_element}, rem} ->
         {list, rem}
     end
   end

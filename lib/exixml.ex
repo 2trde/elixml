@@ -8,7 +8,10 @@ defmodule Elixml do
       |> Elixml.parse
 
   """
-  def parse(text), do: Elixml.Parser.parse(text)
+  def parse(text) do
+    Elixml.Parser.parse(text)
+    |> Elixml.Namespace.extract()
+  end
 
   @doc """
     format an xml node as text
@@ -17,7 +20,11 @@ defmodule Elixml do
     <mynode foo="bar">
 
   """
-  def format(data), do: Elixml.Formater.format(data)
+  def format(data) do
+    data
+    |> Elixml.Namespace.reverse()
+    |> Elixml.Formater.format()
+  end
 
   @doc """
     format an xml node as xml document text
@@ -27,11 +34,18 @@ defmodule Elixml do
     <mynode foo="bar">
 
   """
-  def format_document(data), do: Elixml.Fomater.format_document(data)
+  def format_document(data), do: Elixml.Formater.format_document(data)
 
 
   @doc """
     find elements by name
   """
   def find(data, filter), do: Elixml.Query.find(data, filter)
+
+
+  @doc """
+    get textual content from a node
+  """
+  def text(data), do: Elixml.Query.text(data)
+  def attribute(data, name), do: Elixml.Query.attribute(data, name)
 end
