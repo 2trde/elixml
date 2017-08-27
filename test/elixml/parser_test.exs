@@ -20,4 +20,13 @@ defmodule Elixml.ParserTest do
     # I am happy it is not crashing :)
   end
 
+  test "parse self-closing element" do
+    sample = """
+      <root bla="blub" foo="bar">
+        <child1/>
+      </root>
+    """
+
+    assert format(parse(sample)) == String.trim(sample)
+  end
 end

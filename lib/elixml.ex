@@ -21,7 +21,7 @@ defmodule Elixml do
     format an xml node as text
 
     iex> Elixml.format(%{name: "mynode", children: [], attributes: %{"foo" => "bar"}})
-    "<mynode foo=\\"bar\\"></mynode>"
+    "<mynode foo=\\"bar\\"/>"
 
   """
   def format(data) do
@@ -34,7 +34,7 @@ defmodule Elixml do
     format an xml node as xml document text
 
     iex> Elixml.format_document(%{name: "mynode", ns: nil, children: [], attributes: %{"foo" => "bar"}})
-    "<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>\\n<mynode foo=\\"bar\\"></mynode>"
+    "<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>\\n<mynode foo=\\"bar\\"/>"
 
   """
   def format_document(data) do

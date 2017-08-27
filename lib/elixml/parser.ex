@@ -30,6 +30,17 @@ defmodule Elixml.Parser do
     }
   end
 
+  def parse_element_no_children({_, elem, attr_list}, buffer) do
+    {
+      %{
+        name: elem,
+        attributes: attr_list |> Enum.into(%{}),
+        children: []
+      },
+      buffer
+    }
+  end
+
   def parse_children(buffer, current_element, list) do
     scan(buffer)
     |> case do
@@ -37,6 +48,9 @@ defmodule Elixml.Parser do
         parse_children(rem, current_element, [content | list])
       {{:element_open, _, _} = elem, rem} ->
         {elem, rem} = parse_element(elem, rem)
+        parse_children(rem, current_element, [elem | list])
+      {{:element_open_close, _, _} = elem, rem} ->
+        {elem, rem} = parse_element_no_children(elem, rem)
         parse_children(rem, current_element, [elem | list])
       {{:element_close, _current_element}, rem} ->
         {list, rem}
