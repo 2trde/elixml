@@ -24,20 +24,50 @@ defmodule Elixml.NamespaceTest do
     assert extracted.attributes == %{}
   end
 
-  test "putting prefixes back in" do
-    node = %{
-      name: "root",
-      ns: "http://foobar.com/something.xsd",
-      children: [],
-      attributes: %{}
-    }
-    reversed = reverse(node)
+  describe "reerse" do
+    test "putting prefixes back in" do
+      node = %{
+        name: "root",
+        ns: "http://foobar.com/something.xsd",
+        children: [],
+        attributes: %{}
+      }
+      reversed = reverse(node)
 
-    assert reversed == %{
-      name: "ns1:root",
-      attributes: %{"xmlns:ns1" => "http://foobar.com/something.xsd"},
-      children: []
-    }
+      assert reversed == %{
+        name: "ns1:root",
+        attributes: %{"xmlns:ns1" => "http://foobar.com/something.xsd"},
+        children: []
+      }
+    end
+    test "handle different namespaces" do
+      node = %{
+        name: "root",
+        ns: "http://foobar.com/something.xsd",
+        children: [
+          %{
+            name: "root",
+            ns: "http://foobar.com/something2.xsd",
+            children: [
+            ],
+            attributes: %{}
+          }
+        ],
+        attributes: %{}
+      }
+      reversed = reverse(node)
+
+      assert reversed == %{
+        name: "ns1:root",
+        attributes: %{"xmlns:ns1" => "http://foobar.com/something.xsd"},
+        children: [
+          %{
+            name: "ns2:root",
+            attributes: %{"xmlns:ns2" => "http://foobar.com/something2.xsd"},
+            children: []
+          }
+        ]
+      }
+    end
   end
-
 end

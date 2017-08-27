@@ -1,0 +1,87 @@
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns2:getVehicleDataResponse xmlns:ns2="http://sphinx.dat.de/services/VehicleSelectionService" xmlns:ns3="http://www.dat.de/vxs">
+         <VXS>
+            <ns3:Country>DE</ns3:Country>
+            <ns3:Language>de_DE</ns3:Language>
+            <ns3:Vehicle>
+               <ns3:DatECode>019100701550001</ns3:DatECode>
+               <ns3:Container>DE001</ns3:Container>
+               <ns3:ConstructionTime>5020</ns3:ConstructionTime>
+               <ns3:VehicleTypeName>Pkw, SUV, Kleintransporter</ns3:VehicleTypeName>
+               <ns3:ManufacturerName origin="dat">Volvo</ns3:ManufacturerName>
+               <ns3:BaseModelName origin="dat">XC 90 (07.2002->)</ns3:BaseModelName>
+               <ns3:SubModelName origin="dat">D5 Momentum Geartronic (147 kW)(7 Sitze)</ns3:SubModelName>
+               <ns3:ContainerName>DE - SUV5 D5 DPF AWD EU5, Momentum Geartronic, 2011 - 2013</ns3:ContainerName>
+               <ns3:VehicleType>1</ns3:VehicleType>
+               <ns3:Manufacturer>910</ns3:Manufacturer>
+               <ns3:BaseModel>70</ns3:BaseModel>
+               <ns3:SubModel>155</ns3:SubModel>
+               <ns3:ReleaseIndicator>APPRAISAL</ns3:ReleaseIndicator>
+               <kbaNumbers>9101/AOU</kbaNumbers>
+               <ns3:KbaNumbersN>
+                  <ns3:KbaNumber>9101/AOU</ns3:KbaNumber>
+               </ns3:KbaNumbersN>
+               <ns3:OriginalPrice origin="dat">42639</ns3:OriginalPrice>
+               <ns3:OriginalPriceGross origin="dat">50740</ns3:OriginalPriceGross>
+               <ns3:RentalCarClass>9</ns3:RentalCarClass>
+               <ns3:OriginalPriceInfo>
+                  <ns3:OriginalPriceNet>42639</ns3:OriginalPriceNet>
+                  <ns3:OriginalPriceVATRate>19</ns3:OriginalPriceVATRate>
+                  <ns3:OriginalPriceGross>50740</ns3:OriginalPriceGross>
+               </ns3:OriginalPriceInfo>
+               <ns3:TechInfo>
+                  <ns3:StructureType>SUV</ns3:StructureType>
+                  <ns3:StructureDescription>Sport-Utility-Vehicle</ns3:StructureDescription>
+                  <ns3:CountOfAxles origin="dat">2</ns3:CountOfAxles>
+                  <ns3:WheelBase origin="dat">2857</ns3:WheelBase>
+                  <ns3:Length origin="dat">4807</ns3:Length>
+                  <ns3:Width origin="dat">2112</ns3:Width>
+                  <ns3:Height origin="dat">1784</ns3:Height>
+                  <ns3:RoofLoad origin="dat">100</ns3:RoofLoad>
+                  <ns3:TrailerLoadBraked origin="dat">2250</ns3:TrailerLoadBraked>
+                  <ns3:TrailerLoadUnbraked origin="dat">750</ns3:TrailerLoadUnbraked>
+                  <ns3:VehicleSeats origin="dat">7</ns3:VehicleSeats>
+                  <ns3:VehicleDoors origin="dat">5</ns3:VehicleDoors>
+                  <ns3:CountOfAirbags origin="dat">7</ns3:CountOfAirbags>
+                  <ns3:Acceleration origin="dat">10.3</ns3:Acceleration>
+                  <ns3:SpeedMax origin="dat">205</ns3:SpeedMax>
+                  <ns3:PowerHp origin="dat">200</ns3:PowerHp>
+                  <ns3:PowerKw origin="dat">147</ns3:PowerKw>
+                  <ns3:Capacity origin="dat">2400</ns3:Capacity>
+                  <ns3:Cylinder origin="dat">5</ns3:Cylinder>
+                  <ns3:CylinderArrangement origin="dat">R</ns3:CylinderArrangement>
+                  <ns3:RotationsOnMaxTorque origin="dat">1900</ns3:RotationsOnMaxTorque>
+                  <ns3:Torque origin="dat">420</ns3:Torque>
+                  <ns3:GearboxType>automatic</ns3:GearboxType>
+                  <ns3:NrOfGears>6</ns3:NrOfGears>
+                  <ns3:OriginalTireSizeAxle1>235/60R18</ns3:OriginalTireSizeAxle1>
+                  <ns3:OriginalTireSizeAxle2>235/60R18</ns3:OriginalTireSizeAxle2>
+                  <ns3:TankVolume origin="dat">68</ns3:TankVolume>
+                  <ns3:ConsumptionInTown origin="dat">11</ns3:ConsumptionInTown>
+                  <ns3:ConsumptionOutOfTown origin="dat">6.8</ns3:ConsumptionOutOfTown>
+                  <ns3:Consumption origin="dat">8.3</ns3:Consumption>
+                  <ns3:Co2Emission origin="dat">220</ns3:Co2Emission>
+                  <ns3:EmissionClass origin="dat">E5</ns3:EmissionClass>
+                  <ns3:EmissionClassN>
+                     <ns3:EmissionClassItemN type="EU" description="E5"/>
+                  </ns3:EmissionClassN>
+                  <ns3:Drive origin="dat">Allradantrieb</ns3:Drive>
+                  <ns3:EngineCycle origin="dat">4</ns3:EngineCycle>
+                  <ns3:FuelMethod origin="dat">Diesel</ns3:FuelMethod>
+                  <ns3:FuelMethodType origin="dat">D</ns3:FuelMethodType>
+                  <ns3:UnloadedWeight origin="dat">2207</ns3:UnloadedWeight>
+                  <ns3:PermissableTotalWeight origin="dat">563</ns3:PermissableTotalWeight>
+                  <ns3:Payload origin="dat">2770</ns3:Payload>
+                  <ns3:LoadingSpace origin="dat">249</ns3:LoadingSpace>
+                  <ns3:LoadingSpaceMax origin="dat">1837</ns3:LoadingSpaceMax>
+                  <ns3:InsuranceTypeClassLiability>23</ns3:InsuranceTypeClassLiability>
+                  <ns3:InsuranceTypeClassCascoPartial>21</ns3:InsuranceTypeClassCascoPartial>
+                  <ns3:InsuranceTypeClassCascoComplete>19</ns3:InsuranceTypeClassCascoComplete>
+                  <ns3:ProductGroupName>große SUV / Geländewagen</ns3:ProductGroupName>
+               </ns3:TechInfo>
+            </ns3:Vehicle>
+         </VXS>
+      </ns2:getVehicleDataResponse>
+   </S:Body>
+</S:Envelope>

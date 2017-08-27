@@ -46,8 +46,9 @@ defmodule Elixml.Scanner do
   def _scan_text("<" <> _ = rem, buffer) do
     {{:text, buffer}, rem} 
   end
-  def _scan_text(<< c :: utf8, rem :: binary>>, buffer) do
-    _scan_text(rem, buffer <> << c >>)
+  def _scan_text(data, buffer) do
+    {c, rem} = String.next_codepoint(data)
+    _scan_text(rem, buffer <> c)
   end
 
 

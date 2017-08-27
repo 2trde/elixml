@@ -48,7 +48,7 @@ defmodule Elixml.Namespace do
     Map.get(ns_map, namespace)
     |> case do
       nil ->
-        shortcut = get_next_possible_ns_shortcut(ns_map)
+        shortcut = get_next_possible_ns_shortcut(ns_map |> Map.values)
         new_attributes = Map.put(attributes, "xmlns:#{shortcut}", namespace)
         {Map.put(ns_map, namespace, shortcut), shortcut, new_attributes}
       shortcut ->
@@ -58,13 +58,12 @@ defmodule Elixml.Namespace do
 
   defp get_next_possible_ns_shortcut(ns_map, idx \\ 1) do
     shortcut = "ns#{idx}"
-    Map.get(ns_map, shortcut)
-    |> case do
-      nil -> shortcut
-      _ -> get_next_possible_ns_shortcut(ns_map, idx+1)
+    if shortcut in ns_map do
+      get_next_possible_ns_shortcut(ns_map, idx+1)
+    else
+      shortcut
     end
   end
-
 
   def _split_prefixed(prefixed, ns_map) do
     prefixed
