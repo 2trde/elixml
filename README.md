@@ -32,11 +32,11 @@ end
 
 ```elixir
 mydoc =
-  File.read!("my_xml_file")
+  File.read!("my_file.xml")
   |> Elixml.parse
 
 # will return the root element like
-# %{name: "my_root_element", children: [], attributes: []}
+# %{name: "my_root_element", children: [...], attributes: [...]}
 ```
 
 ### Find elements
