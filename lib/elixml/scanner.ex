@@ -88,8 +88,9 @@ defmodule Elixml.Scanner do
   def _scan_quoted_active("\"" <> rem, value) do
     {value, rem}
   end
-  def _scan_quoted_active(<< c :: utf8, rem :: binary>>, value) do
-    _scan_quoted_active(rem, value <> << c >>)
+  def _scan_quoted_active(data, value) do
+    {c, rem} = String.next_codepoint(data)
+    _scan_quoted_active(rem, value <> c)
   end
 
   ### expect a special char ############################
