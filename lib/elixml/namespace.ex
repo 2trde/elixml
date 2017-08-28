@@ -65,7 +65,7 @@ defmodule Elixml.Namespace do
     end
   end
 
-  def _split_prefixed(prefixed, ns_map) do
+  defp _split_prefixed(prefixed, ns_map) do
     prefixed
     |> String.split(":")
     |> case do
@@ -89,7 +89,7 @@ defmodule Elixml.Namespace do
     end)
   end
 
-  def _remove_definitions(attributes) do
+  defp _remove_definitions(attributes) do
     attributes
     |> Enum.filter(fn {k, _v} ->
       !(k =~ ~r/^xmlns:.*$/)

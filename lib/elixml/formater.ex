@@ -23,7 +23,7 @@ defmodule Elixml.Formater do
     "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n#{root_node}"
   end
 
-  def format_attributes(list) do
+  defp format_attributes(list) do
     (list
     |> Enum.map(fn {k, v} -> "#{k}=\"#{v}\"" end)
     |> Enum.join(" "))

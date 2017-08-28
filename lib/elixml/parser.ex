@@ -6,7 +6,7 @@ defmodule Elixml.Parser do
     root
   end
 
-  def parse_root(buffer) do
+  defp parse_root(buffer) do
     scan(buffer)
     |> case do
       {{:text, _}, rem} ->
@@ -18,7 +18,7 @@ defmodule Elixml.Parser do
     end
   end
 
-  def parse_element({_, elem, attr_list}, buffer) do
+  defp parse_element({_, elem, attr_list}, buffer) do
     {children, rem} = parse_children(buffer, elem, [])
     {
       %{
@@ -30,7 +30,7 @@ defmodule Elixml.Parser do
     }
   end
 
-  def parse_element_no_children({_, elem, attr_list}, buffer) do
+  defp parse_element_no_children({_, elem, attr_list}, buffer) do
     {
       %{
         name: elem,
@@ -41,7 +41,7 @@ defmodule Elixml.Parser do
     }
   end
 
-  def parse_children(buffer, current_element, list) do
+  defp parse_children(buffer, current_element, list) do
     scan(buffer)
     |> case do
       {{:text, content}, rem} ->

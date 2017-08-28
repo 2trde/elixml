@@ -25,30 +25,30 @@ defmodule Elixml.Query do
   def find(_, _filter), do: []
 
 
-  def process_filter_chain(el, filter)
-  def process_filter_chain(_el, []), do: {[], nil}
-  def process_filter_chain(el, [last]) do
+  defp process_filter_chain(el, filter)
+  defp process_filter_chain(_el, []), do: {[], nil}
+  defp process_filter_chain(el, [last]) do
     if does_match?(el, last) do
       {[el], nil}
     else
       {[], nil}
     end
   end
-  def process_filter_chain(el, ["*", first] = filter) do
+  defp process_filter_chain(el, ["*", first] = filter) do
     if does_match?(el, first) do
       {[el], nil}
     else
       {[], filter}
     end
   end
-  def process_filter_chain(el, ["*", first | rem] = filter) do
+  defp process_filter_chain(el, ["*", first | rem] = filter) do
     if does_match?(el, first) do
       {[], rem}
     else
       {[], filter}
     end
   end
-  def process_filter_chain(el, [first | rem]) do
+  defp process_filter_chain(el, [first | rem]) do
     if does_match?(el, first) do
       {[], rem}
     else
@@ -60,9 +60,9 @@ defmodule Elixml.Query do
   @doc """
     check if a filter matches a node
   """
-  def does_match?(element, filter)
-  def does_match?(%{name: name}, name), do: true
-  def does_match?(_, _), do: false
+  defp does_match?(element, filter)
+  defp does_match?(%{name: name}, name), do: true
+  defp does_match?(_, _), do: false
 
 
   @doc """

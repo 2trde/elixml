@@ -40,37 +40,37 @@ defmodule Elixml.Scanner do
   end
 
 
-  def _scan_text("", buffer) do
+  defp _scan_text("", buffer) do
     {{:text, buffer}, ""} 
   end
-  def _scan_text("<" <> _ = rem, buffer) do
+  defp _scan_text("<" <> _ = rem, buffer) do
     {{:text, buffer}, rem} 
   end
-  def _scan_text(data, buffer) do
+  defp _scan_text(data, buffer) do
     {c, rem} = String.next_codepoint(data)
     _scan_text(rem, buffer <> c)
   end
 
 
-  def _scan_element_ending(">" <> rem, name, attr_list) do
+  defp _scan_element_ending(">" <> rem, name, attr_list) do
     {{:element_open, name, attr_list}, rem}
   end
-  def _scan_element_ending("/>" <> rem, name, attr_list) do
+  defp _scan_element_ending("/>" <> rem, name, attr_list) do
     {{:element_open_close, name, attr_list}, rem}
   end
 
   ### scan attributes ##################################
 
-  def _scan_attributes(">" <> _ = rem, attr_list) do
+  defp _scan_attributes(">" <> _ = rem, attr_list) do
     {attr_list, rem}
   end
-  def _scan_attributes("/>" <> _ = rem, attr_list) do
+  defp _scan_attributes("/>" <> _ = rem, attr_list) do
     {attr_list, rem}
   end
-  def _scan_attributes("?>" <> _ = rem, attr_list) do
+  defp _scan_attributes("?>" <> _ = rem, attr_list) do
     {attr_list, rem}
   end
-  def _scan_attributes(rem, attr_list) do
+  defp _scan_attributes(rem, attr_list) do
     {name, rem} = _scan_identifier(rem)
     rem = _eat_ws(rem)
     rem = _expect(rem, ?=)
@@ -82,44 +82,44 @@ defmodule Elixml.Scanner do
 
   ### scan quote #######################################
       
-  def _scan_quoted("\"" <> rem) do
+  defp _scan_quoted("\"" <> rem) do
     _scan_quoted_active(rem, "")
   end
-  def _scan_quoted_active("\"" <> rem, value) do
+  defp _scan_quoted_active("\"" <> rem, value) do
     {value, rem}
   end
-  def _scan_quoted_active(data, value) do
+  defp _scan_quoted_active(data, value) do
     {c, rem} = String.next_codepoint(data)
     _scan_quoted_active(rem, value <> c)
   end
 
   ### expect a special char ############################
 
-  def _expect(<< exp :: utf8, rem :: binary >>, exp) do
+  defp _expect(<< exp :: utf8, rem :: binary >>, exp) do
     rem
   end
 
   ### eat whitespaces #################################
 
-  def _eat_ws(<< ws :: utf8, rem :: binary >>)  when ws in @whitespaces do
+  defp _eat_ws(<< ws :: utf8, rem :: binary >>)  when ws in @whitespaces do
     _eat_ws(rem)
   end
-  def _eat_ws(rem) do
+  defp _eat_ws(rem) do
     rem
   end
 
   ### scan identifier ################################
 
-  def _scan_identifier(<< ws :: utf8, rem :: binary>>) when ws in @whitespaces do
+  defp _scan_identifier(<< ws :: utf8, rem :: binary>>) when ws in @whitespaces do
     _scan_identifier(rem)
   end
-  def _scan_identifier(rem) do
+  defp _scan_identifier(rem) do
     _scan_identifier_active(rem, "")
   end
-  def _scan_identifier_active(<< c :: utf8, rem :: binary>>, id) when c in @identifier_chars do
+  defp _scan_identifier_active(<< c :: utf8, rem :: binary>>, id) when c in @identifier_chars do
     _scan_identifier_active(rem, id <> << c >>)
   end
-  def _scan_identifier_active(rem, id) do
+  defp _scan_identifier_active(rem, id) do
     {id, rem}
   end
 end
