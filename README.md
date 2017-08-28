@@ -89,10 +89,11 @@ child1 = Elixml.find(mydoc, "//child1") |> hd
 Elixml.format_document(child1)
 # will return
 # """
-#  <?xml version=\"1.0\" encoding=\"UTF-8\"?>
+#  <?xml version="1.0" encoding="UTF-8"?>
 #  <child1>
 #    <subchild>foo</subchild>
 #  </child1>
+# """
 <Paste>
 ```
 
