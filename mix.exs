@@ -4,7 +4,7 @@ defmodule Elixml.Mixfile do
   def project do
     [
       app: :elixml,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.4",
       start_permanent: Mix.env == :prod,
       name: "elixml",
