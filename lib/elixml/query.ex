@@ -57,9 +57,9 @@ defmodule Elixml.Query do
   end
 
 
-  @doc """
-    check if a filter matches a node
-  """
+  # @doc """
+  #   check if a filter matches a node
+  # """
   defp does_match?(element, filter)
   defp does_match?(%{name: name}, name), do: true
   defp does_match?(_, _), do: false
