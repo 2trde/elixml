@@ -9,7 +9,7 @@ defmodule Elixml.Scanner do
       {:element, %{"foo" => "bar"}}
       {:text, "foo bar foo"}
   """
-  def scan(buffer) 
+  def scan(buffer)
   def scan("") do
     {:eof, ""}
   end
@@ -28,23 +28,34 @@ defmodule Elixml.Scanner do
     rem = _expect(rem, ?>)
     {{:header, attr_list}, rem}
   end
+  def scan("<![CDATA[" <> rem) do
+    {text, rem} = _scan_cdata(rem, "")
+    {{:text, text}, rem}
+  end
   def scan("<" <> rem) do
     rem = _eat_ws(rem)
     {name, rem} = _scan_identifier(rem)
     rem = _eat_ws(rem)
     {attr_list, rem} = _scan_attributes(rem, [])
-    _scan_element_ending(rem, name, attr_list) 
+    _scan_element_ending(rem, name, attr_list)
   end
   def scan(rem) do
     _scan_text(rem, "")
   end
 
+  defp _scan_cdata("]]>" <> rem, buffer) do
+    {buffer, rem}
+  end
+  defp _scan_cdata(data, buffer) do
+    {c, rem} = String.next_codepoint(data)
+    _scan_cdata(rem, buffer <> c)
+  end
 
   defp _scan_text("", buffer) do
-    {{:text, buffer}, ""} 
+    {{:text, buffer}, ""}
   end
   defp _scan_text("<" <> _ = rem, buffer) do
-    {{:text, buffer}, rem} 
+    {{:text, buffer}, rem}
   end
   defp _scan_text(data, buffer) do
     {c, rem} = String.next_codepoint(data)
@@ -81,7 +92,7 @@ defmodule Elixml.Scanner do
   end
 
   ### scan quote #######################################
-      
+
   defp _scan_quoted("\"" <> rem) do
     _scan_quoted_active(rem, "")
   end

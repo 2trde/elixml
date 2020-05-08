@@ -23,6 +23,11 @@ defmodule Elixml.ScannerTest do
   end
 
   test "scan close tag" do
-    assert {{:element_close, "bla"}, ""}  == scan("</bla>")
+    assert {{:element_close, "bla"}, ""} == scan("</bla>")
+  end
+
+
+  test "cdata" do
+    assert {{:text, "Test <a>test</a>"}, ""} == scan("<![CDATA[Test <a>test</a>]]>")
   end
 end

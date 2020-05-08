@@ -15,7 +15,7 @@ defmodule Elixml.Query do
     child_hits = if filter do
                    children
                    |> Enum.map(fn child -> find(child, filter) end)
-                 else 
+                 else
                    []
                  end
 
