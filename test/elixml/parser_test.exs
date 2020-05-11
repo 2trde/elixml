@@ -1,7 +1,7 @@
 defmodule Elixml.ParserTest do
   use ExUnit.Case
   import Elixml.Parser
-  import Elixml.Formater
+  import Elixml.Formatter
 
   test "parse simple doc" do
     sample = """

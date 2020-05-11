@@ -1,20 +1,20 @@
 defmodule Elixml.Namespace do
   @moduledoc """
-    Alow to identifiy namespaces
+    Allow to identify namespaces
   """
 
   def extract(data, ns_map \\ %{})
 
   def extract(%{name: name, children: children, attributes: attributes} = element, ns_map) do
-    ns_map = _capture_definitions(ns_map, attributes)
+    ns_map = capture_definitions(ns_map, attributes)
 
-    {namespace, name} = _split_prefixed(name, ns_map)
+    {namespace, name} = split_prefixed(name, ns_map)
     
     element
     |> Map.put(:name, name)
     |> Map.put(:ns, namespace)
     |> Map.put(:children, extract(children, ns_map))
-    |> Map.put(:attributes, _remove_definitions(attributes))
+    |> Map.put(:attributes, remove_definitions(attributes))
   end
 
   def extract(str, _) when is_binary(str), do: str
@@ -65,7 +65,7 @@ defmodule Elixml.Namespace do
     end
   end
 
-  defp _split_prefixed(prefixed, ns_map) do
+  defp split_prefixed(prefixed, ns_map) do
     prefixed
     |> String.split(":")
     |> case do
@@ -77,7 +77,7 @@ defmodule Elixml.Namespace do
     end
   end
 
-  defp _capture_definitions(ns_map, attributes) do
+  defp capture_definitions(ns_map, attributes) do
     attributes
     |> Enum.reduce(ns_map, fn {k, v}, ns_map ->
       with ["xmlns", shortcut] <- String.split(k, ":") do
@@ -89,7 +89,7 @@ defmodule Elixml.Namespace do
     end)
   end
 
-  defp _remove_definitions(attributes) do
+  defp remove_definitions(attributes) do
     attributes
     |> Enum.filter(fn {k, _v} ->
       !(k =~ ~r/^xmlns:.*$/)

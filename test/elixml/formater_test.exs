@@ -1,4 +1,4 @@
-defmodule Elixml.FormaterTest do
+defmodule Elixml.FormatterTest do
   use ExUnit.Case
   import Elixml
 

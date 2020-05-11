@@ -1,4 +1,4 @@
-defmodule Elixml.Formater do
+defmodule Elixml.Formatter do
   def format(element)
   def format(%{name: name, attributes: attributes, children: []}) do
     "<" <> name <> format_attributes(attributes) <> "/>"

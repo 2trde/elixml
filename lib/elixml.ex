@@ -27,7 +27,7 @@ defmodule Elixml do
   def format(data) do
     data
     |> Elixml.Namespace.reverse()
-    |> Elixml.Formater.format()
+    |> Elixml.Formatter.format()
   end
 
   @doc """
@@ -40,7 +40,7 @@ defmodule Elixml do
   def format_document(data) do
     data
     |> Elixml.Namespace.reverse()
-    |> Elixml.Formater.format_document()
+    |> Elixml.Formatter.format_document()
   end
 
 
