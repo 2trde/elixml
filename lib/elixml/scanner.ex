@@ -1,6 +1,6 @@
 defmodule Elixml.Scanner do
   @whitespaces '\t\r\n '
-  @identifier_chars 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890_:'
+  @identifier_chars 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890_-:'
 
   @doc """
     scan a buffer
