@@ -5,7 +5,8 @@ defmodule Elixml.Namespace do
 
   def extract(data, ns_map \\ %{})
 
-  def extract(%{name: name, children: children, attributes: attributes} = element, ns_map) do
+  def extract(%{name: name, children: children} = element, ns_map) do
+    attributes = element[:attributes] || %{}
     ns_map = capture_definitions(ns_map, attributes)
 
     {namespace, name} = split_prefixed(name, ns_map)
@@ -23,7 +24,9 @@ defmodule Elixml.Namespace do
 
   def reverse(node, ns_map \\ %{})
 
-  def reverse(%{name: name, attributes: attributes, children: children} = element, ns_map) do
+  def reverse(%{name: name, children: children} = element, ns_map) do
+    attributes = element[:attributes] || %{}
+
     {name, attributes, ns_map} = case Map.get(element, :ns) do
       nil ->
         {name, attributes, ns_map}
