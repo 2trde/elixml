@@ -15,7 +15,7 @@ defmodule Elixml.Formatter do
     |> Enum.join("")
   end
 
-  def format(text) when is_binary(text), do: text
+  def format(text) when is_binary(text), do: escape_characters(text)
 
 
   def format_document(element) do
@@ -25,11 +25,23 @@ defmodule Elixml.Formatter do
 
   defp format_attributes(list) do
     (list
-    |> Enum.map(fn {k, v} -> "#{k}=\"#{v}\"" end)
+    |> Enum.map(fn
+      {k, v} when is_binary(v) -> "#{k}=\"#{escape_characters(v)}\""
+      {k, v} -> "#{k}=\"#{v}\""
+    end)
     |> Enum.join(" "))
     |> case do
       "" -> ""
       str -> " " <> str
     end
+  end
+
+  defp escape_characters(text) do
+    text
+    |> String.replace("\"", "&quot;")
+    |> String.replace("'", "&apos;")
+    |> String.replace("<", "&lt;")
+    |> String.replace(">", "&gt;")
+    |> String.replace("&", "&amp;")
   end
 end
